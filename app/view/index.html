@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <title><%- typeof title === 'undefined' ? '' : title %></title>
+    <meta name="keywords" content="MOBILE-CLI" />
+    <meta name="description" content="来自MOBILE-CLI，点击可查看详情" />
+    <meta name="format-detection" content="address=no,email=no,telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit">
+    <% include ./common.html %>
+    <% include ./wxsdk.html %>
+  </head>
+  <body>
+    <div id="root"></div>
+    <% include ./asset.html %>
+  </body>
+</html>

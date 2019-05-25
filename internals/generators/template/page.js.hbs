@@ -1,0 +1,43 @@
+/**
+*
+* {{ pageName }}
+*
+*/
+
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+{{#if componentName }}
+import {{ componentName }} from './{{ componentName }}';
+{{/if}}
+
+class {{ pageName }} extends React.Component {
+	constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
+
+  componentWillMount() {
+
+  }
+
+  componentDidMount() {
+
+  }
+
+  render() {
+    return (
+      <div>
+        <{{ componentName }} />
+      </div>
+    );
+  }
+}
+
+{{ pageName }}.propTypes = {
+
+};
+
+export default {{ pageName }};

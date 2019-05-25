@@ -1,0 +1,7 @@
+<script type="text/javascript">
+<% if(varies) { %>
+  <% for(let item in varies) { %>
+    window['<%= item %>'] = '<%= varies[item] %>';
+  <% } %>
+<% } %>
+</script>

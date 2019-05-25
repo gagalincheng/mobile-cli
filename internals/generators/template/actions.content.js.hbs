@@ -1,0 +1,19 @@
+{{#if isDispatch }}
+
+export const {{ actionName }} = () => dispatch => {
+	return callAPI({{ actionType }}).then(resp => {
+
+	}, err => {
+		throw err;
+	});
+}
+{{/if}}
+
+{{#if isNormal }}
+
+export const {{ actionName }} = () => {
+	return {
+		type: types.{{ actionType }}
+	};
+}
+{{/if}}

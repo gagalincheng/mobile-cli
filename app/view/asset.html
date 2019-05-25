@@ -1,0 +1,5 @@
+<% if (typeof chunks !== 'undefined') { %>
+  <% chunks.forEach(function(name){ %>
+    <%- chunksMap[name] %>
+  <% }) %>
+<% } %>

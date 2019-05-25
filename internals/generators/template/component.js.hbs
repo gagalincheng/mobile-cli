@@ -1,0 +1,59 @@
+/**
+ *
+ * {{ fileName }}
+ *
+ */
+
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+// import * as Actions from '../../../actions/';
+
+class {{ fileName }} extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+
+    }
+  }
+
+  componentWillMount() {
+
+  }
+
+  componentDidMount() {
+
+  }
+
+  render() {
+    return (
+      <div>
+      </div>
+    )
+  }
+}
+
+{{ fileName }}.propTypes = {
+
+};
+
+const mapStateToProps = (state) => {
+  return {
+    // : state.get(''),
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    dispatch: dispatch,
+    actions: {
+      // ...bindActionCreators(Actions, dispatch),
+    }
+  }
+}
+
+const withConnect = connect(mapStateToProps, mapDispatchToProps);
+
+export default withConnect({{ fileName }});

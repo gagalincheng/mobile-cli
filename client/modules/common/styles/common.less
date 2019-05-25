@@ -1,0 +1,104 @@
+// 部分移动端规范样式
+
+.accent-btn {
+  font-size: 34px;/*px*/
+  line-height: 88px;
+  display: block;
+  height: 88px;
+  padding: 0;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background-color: #198cff;
+
+  &:active {
+    background-color: #1b81eb;
+  }
+
+  &.disabled,
+  &[disabled] {
+    opacity: .5;
+  }
+}
+
+input::-webkit-input-placeholder {
+  color: #d3d9e6;
+}
+
+.ui-input {
+  font-size: 30px;/*px*/
+  box-sizing: border-box;
+  height: 88px;
+  padding: 0 24px;
+  color: #213454;
+  border: 1px solid #a3b1cc;/*no*/
+  border-radius: 8px;
+  box-shadow: none;
+
+  &:focus {
+    border-color: #198cff;
+  }
+
+  &.ui-input-error {
+    border-color: #fa5252;
+  }
+
+  &.ui-input-disabled,
+  &[disabled] {
+    color: #b5bbc6;
+    background-color: #f5f6f8;
+  }
+}
+
+.background-setting() {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ui-btn,
+.ui-default-btn {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 64px;
+  padding: 0 42px;
+  border-radius: 4px;
+  line-height: 64px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;/*px*/
+  -webkit-appearance: none;
+}
+
+// 移动端新的规范按钮样式
+.ui-btn {
+  color: #fff;
+  border: none;
+  background-color: #198CFF;
+
+  &:active {
+    background-color: #1470CC;
+  }
+
+  &.disabled,
+  &[disabled] {
+    background-color: #A3D1FF;
+  }
+}
+
+.ui-default-btn {
+  color: #858FA1;
+  border: 1px solid #DFE2E7;/*no*/
+  background-color: #fff;
+
+  &:active {
+    background-color: #F5F6F8;
+  }
+
+  &.disabled,
+  &[disabled] {
+    color: #B5BBC6;
+    background-color: #fff;
+  }
+}
